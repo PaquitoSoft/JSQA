@@ -5,11 +5,10 @@
 
 var express = require('express'),
     jshint = require('jshint'),
+    config = require('./lib/config.js').config,
     rules = require('./lib/rules.js').rules,
     util = require('util'),
     spy = require('./lib/spy.js');
-
-var CODE_BASE_PATH = "/Users/telemaco/Desarrollo/Node/Proyectos/music_player/public/js";
 
 var app = module.exports = express.createServer();
 
@@ -41,7 +40,7 @@ app.get('/', function(req, res){
   Object.keys(analysisData).forEach(function(key) {
     errorsCount += analysisData[key].length;
     // Get file path relative to base path
-    report.push({file: key.substr(CODE_BASE_PATH.length), errors: analysisData[key]});
+    report.push({file: key.substr(config.basePath.length), errors: analysisData[key]});
   });
   res.render('index', {
     totalErrorsCount: errorsCount,
@@ -50,7 +49,7 @@ app.get('/', function(req, res){
 });
 
 // Start analyzing code
-spy.spy(CODE_BASE_PATH);
+spy.spy(config.basePath);
 
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
