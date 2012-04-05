@@ -1,0 +1,29 @@
+.accordion-group .accordion-toggle .badge {
+	margin-right: 5px;
+	position: relative;
+	top: -3px;	
+}
+
+.accordion-group .accordion-toggle {
+	position: relative;
+}
+
+.accordion-group .accordion-toggle .filename {
+	display: inline;	
+	position: absolute;
+	left: 60px;
+}
+
+.accordion-group .accordion-toggle {
+	text-decoration: none;
+}
+
+.accordion-group .accordion-inner .table .label {
+	position: relative;
+	top: 2px;
+}
+
+.tableTitle {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
