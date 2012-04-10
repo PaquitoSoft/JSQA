@@ -9,3 +9,10 @@ for changes in any of them so a new analysis is fired if you edit your code.
 A web server is started (by default at port 3000) to let you view a clean and simple analysis report.
 
 ![Screenshot](https://github.com/PaquitoSoft/JSQA/raw/master/sample_image.png)
+
+
+TODO
+====
+
+Use [Socket.io](http://socket.io/) library to push changes from the server to the client so they don't have to refresh the web page 
+to see new analisys results.
