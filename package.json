@@ -6,8 +6,5 @@
       "express": ">= 2.4.6"
     , "jade": ">= 0.0.1"
     , "socket.io": "0.9.5"
-  }
-  , "devDependencies": {
-  		"mocha": "0.3.x"
-  }
+  }  
 }
