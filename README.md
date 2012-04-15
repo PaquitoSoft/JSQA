@@ -12,3 +12,36 @@ A web server is started (by default at port 3000) to let you view a clean and si
 
 It also uses the outstanding [Socket.io](http://socket.io/) library to push changes from the server to the client so they don't have to refresh the web page 
 to see new analisys results.
+
+How to use
+==========
+
+Prerequisites: This tools is written using [NodeJs](http://nodejs.org/) so you'll need it installed into your system. 
+Also, you should install [npm](http://npmjs.org/).
+
+First you have to clone this repo
+
+```bash
+$> git clone git://github.com/PaquitoSoft/JSQA.git
+```
+
+Get into de the directory and install tool dependencies
+
+```bash
+$> cd JSQA
+$> npm install -d
+```
+
+Now that yo have the tool ready, configure it for your project. This involves updating two files:
+
+- lib/config.js -> Here you set your project js folder and your exclusions (optional)
+- lib/rules.js -> These are the options passed to JSHINT for analysis.
+
+That's it. Now you only need to run the application:
+
+
+```bash
+$> node app.js
+```
+
+Web server starts listening on port 5000 by default, so open up a browser and point it to [http://locahost:5000](http://localhost:5000)
