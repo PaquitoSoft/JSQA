@@ -1,4 +1,10 @@
 node_modules/**/*
 node_modules/*
 .DS_Store
-
+start.bat
+install.bat
+lib/config.js
+lib/rules.js
+Makefile
+test/**/*
+test/*

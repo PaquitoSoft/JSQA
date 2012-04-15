@@ -10,8 +10,8 @@ div#accordionReport.accordion
 			div.accordion-group
 				div.accordion-heading
 					a.accordion-toggle(href='#collapse_' + i, data-toggle='collapse')
-						span.badge.badge-error #{item.errors.length}
-						h4.filename #{item.file}
+						span.badge.badge-error.errorsCount #{item.errors.length}
+						h4.filename(data-filename='' + item.formattedFilename) #{item.file}
 				div.accordion-body.collapse(id='collapse_' + i)
 					div.accordion-inner					
 							table.table.table-striped.table-bordered.table-condensed
@@ -25,9 +25,9 @@ div#accordionReport.accordion
 									each err in item.errors
 										unless !err
 											tr
-												th #{err.line}
-												th #{err.character}
-												th #{err.reason}
-												th #{err.evidence}
+												td #{err.line}
+												td #{err.character}
+												td #{err.reason}
+												td #{err.evidence}
 
 	
