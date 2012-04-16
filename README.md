@@ -45,3 +45,10 @@ $> node app.js
 ```
 
 Web server starts listening on port 5000 by default, so open up a browser and point it to [http://locahost:5000](http://localhost:5000)
+
+
+TODO
+====
+
+- Use the same instance application to analyze several projects
+- Save a history of the projects analysis.
