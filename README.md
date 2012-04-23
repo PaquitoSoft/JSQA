@@ -11,7 +11,7 @@ A web server is started (by default at port 5000) to let you view a clean and si
 ![Screenshot](https://github.com/PaquitoSoft/JSQA/raw/master/sample_image.png)
 
 It also uses the outstanding [Socket.io](http://socket.io/) library to push changes from the server to the client so they don't have to refresh the web page 
-to see new analisys results.
+to see new analysis results.
 
 How to use
 ==========
@@ -25,14 +25,14 @@ First you have to clone this repo
 $> git clone git://github.com/PaquitoSoft/JSQA.git
 ```
 
-Get into de the directory and install tool dependencies
+Get into the directory and install tool dependencies
 
 ```bash
 $> cd JSQA
 $> npm install -d
 ```
 
-Now that yo have the tool ready, configure it for your project. This involves updating two files:
+Now that you have the tool ready, configure it for your project. This involves updating two files:
 
 - lib/config.js -> Here you set your project js folder and your exclusions (optional)
 - lib/rules.js -> These are the options passed to JSHINT for analysis.
