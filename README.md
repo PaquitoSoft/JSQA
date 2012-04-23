@@ -6,7 +6,7 @@ You need to configure your JS base path and the rules you want to apply.
 When you run this tool it analyze all the files in your base path (recursively) and then it keeps watching 
 for changes in any of them so a new analysis is fired if you edit your code.
 
-A web server is started (by default at port 3000) to let you view a clean and simple analysis report.
+A web server is started (by default at port 5000) to let you view a clean and simple analysis report.
 
 ![Screenshot](https://github.com/PaquitoSoft/JSQA/raw/master/sample_image.png)
 
